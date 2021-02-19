@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Recipe from "./Recipe";
+import "./App.css";
 
 const App = () => {
   const APP_ID = "f30d78e3";
@@ -8,7 +9,7 @@ const App = () => {
   const [recipes, setRecipes] = useState([]);
 
   const [search, setSearch] = useState("");
-  const [query, setQuery] = useState("food");
+  const [query, setQuery] = useState("potatoes");
 
   useEffect(() => {
     getRecipes();
@@ -34,8 +35,10 @@ const App = () => {
   return (
     <>
       <div className="App">
+        <h1 className="heading">RECIPE FINDER</h1>
         <form onSubmit={getSearch} className="search-form">
           <input
+            placeholder="Search Here"
             className="search-bar"
             type="text"
             value={search}
@@ -45,15 +48,25 @@ const App = () => {
             Search
           </button>
         </form>
-        {recipes.map((recipe) => (
-          <Recipe
-            key={recipe.recipe.calories}
-            imgLink={recipe.recipe.image}
-            title={recipe.recipe.label}
-            calories={recipe.recipe.calories}
-            ingredients={recipe.recipe.ingredientLines}
-          />
-        ))}
+
+        <h1
+          className="recipe-title"
+          style={{ color: "white", fontSize: "0.9rem" }}
+        >
+          Currently searching results for "{query}"
+        </h1>
+        <div className="main-container">
+          {recipes.map((recipe) => (
+            <Recipe
+              key={recipe.recipe.calories}
+              imgLink={recipe.recipe.image}
+              title={recipe.recipe.label}
+              calories={recipe.recipe.calories}
+              ingredients={recipe.recipe.ingredientLines}
+              recipeLink={recipe.recipe.url}
+            />
+          ))}
+        </div>
       </div>
     </>
   );

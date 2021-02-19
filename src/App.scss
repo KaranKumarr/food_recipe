@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Newsreader&display=swap");
+.App {
+  color: rgb(0, 0, 0);
+  font-family: "Newsreader", serif;
+}
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  //   align-items: center;
+}
+.recipe {
+  background: whitesmoke;
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 20rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.image {
+  width: 11rem;
+  height: 14rem;
+  margin: 0.5rem 0;
+  right: auto;
+  border-radius: 5px;
+}
+.recipe-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin: 0.5rem 0;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.recipe-title:hover {
+  color: rgba(black, 0.8);
+}
+.recipe-desc {
+  font-size: 0.7rem;
+  color: rgba(#000000, 0.8);
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+.search-form {
+  display: flex;
+  margin: 2rem;
+  justify-content: center;
+}
+.search-bar {
+  margin: 1rem;
+  border-radius: 50px;
+  border: none;
+  padding: 0.5rem;
+  transition: 0.7s;
+}
+.search-bar:focus {
+  border-radius: 0.5px;
+  outline: none;
+  border: none;
+}
+.search-btn {
+  margin: 1rem;
+  padding: 0.3rem 1rem;
+  border: none;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+.search-btn:hover {
+  cursor: pointer;
+  background: rgba(whitesmoke, 0.8);
+  color: rgba($color: #000000, $alpha: 0.8);
+}
+.heading {
+  margin: 1rem;
+  color: white;
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 5px;
+}

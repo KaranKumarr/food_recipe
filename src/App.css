@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Newsreader&display=swap");
+.App {
+  color: black;
+  font-family: "Newsreader", serif;
+}
+
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.recipe {
+  background: whitesmoke;
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 20rem;
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.image {
+  width: 11rem;
+  height: 14rem;
+  margin: 0.5rem 0;
+  right: auto;
+  border-radius: 5px;
+}
+
+.recipe-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin: 0.5rem 0;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.recipe-title:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.recipe-desc {
+  font-size: 0.7rem;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+
+.search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.search-bar {
+  margin: 1rem;
+  border-radius: 50px;
+  border: none;
+  padding: 0.5rem;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.search-bar:focus {
+  border-radius: 0.5px;
+  outline: none;
+  border: none;
+}
+
+.search-btn {
+  margin: 1rem;
+  padding: 0.3rem 1rem;
+  border: none;
+  border-radius: 4px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.search-btn:hover {
+  cursor: pointer;
+  background: rgba(245, 245, 245, 0.8);
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.heading {
+  margin: 1rem;
+  color: white;
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+/*# sourceMappingURL=App.css.map */
