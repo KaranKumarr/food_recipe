@@ -79,7 +79,7 @@
 
 .search-bar {
   margin: 1rem;
-  border-radius: 50px;
+  border-radius: 17px;
   border: none;
   padding: 0.5rem;
   -webkit-transition: 0.7s;
@@ -96,7 +96,7 @@
   margin: 1rem;
   padding: 0.3rem 1rem;
   border: none;
-  border-radius: 4px;
+  border-radius: 17px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -105,6 +105,11 @@
   cursor: pointer;
   background: rgba(245, 245, 245, 0.8);
   color: rgba(0, 0, 0, 0.8);
+}
+
+.search-btn:focus {
+  border-radius: 0.5rem;
+  outline: none;
 }
 
 .heading {
