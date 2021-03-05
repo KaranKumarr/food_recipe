@@ -12,7 +12,7 @@
 .recipe {
   background: whitesmoke;
   border-radius: 1rem;
-  padding: 1rem;
+  padding: 0.5rem;
   width: 20rem;
   margin: 1rem;
   display: flex;
@@ -41,10 +41,11 @@
   color: rgba(black, 0.8);
 }
 .recipe-desc {
-  font-size: 0.7rem;
+  font-size: 0.4rem;
   color: rgba(#000000, 0.8);
   font-weight: 700;
   margin: 0.5rem 0;
+  letter-spacing: 0.1rem;
 }
 .search-form {
   display: flex;
